@@ -1,1 +1,2 @@
-#This is my first file on this branch for testing.
+#These are all my codes made when learning.
+I want to make records of my learning experience~
