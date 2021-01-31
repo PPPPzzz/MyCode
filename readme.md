@@ -1,2 +1,4 @@
-#These are all my codes made when learning.
-I want to make records of my learning experience~
+#My own repository for C&S learning.
+
+1/31/2021
+Data Structure: Deque of Array and Linked List
