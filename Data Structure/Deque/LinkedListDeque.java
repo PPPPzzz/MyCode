@@ -7,8 +7,8 @@ public class LinkedListDeque<T> implements Deque<T> {
         public LinkedList(T item)
         {
             this.item = item;
-            this.next = this;
-            this.last = this;
+            this.next = null;
+            this.last = null;
         }
     }
     
@@ -26,8 +26,13 @@ public class LinkedListDeque<T> implements Deque<T> {
     public void addFirst(T item)
     {
         LinkedList p = new LinkedList(item);
-        p.next = head;
-        p.last = null;
+        if(size() == 0)
+            tail = p;
+        else
+        {
+            head.last = p;
+            p.next = head;
+        }
         head = p;
         ++size;
     }
@@ -36,19 +41,15 @@ public class LinkedListDeque<T> implements Deque<T> {
     public void addLast(T item)
     {
         LinkedList p = new LinkedList(item);
-        p.next = null;
-        p.last = tail;
+        if(size() == 0)
+            head = p;
+        else
+        {
+            tail.next = p;
+            p.last = tail;
+        }
         tail = p;
         ++size;
-    }
-
-    @Override
-    public boolean isEmpty()
-    {
-        if(head == null)
-            return true;
-        else
-            return false;
     }
 
     @Override
