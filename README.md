@@ -22,3 +22,7 @@ ArraySet
 3/13/2021
 Data Structure:
 CompariosnNTimingTests
+
+3/16/2021
+Data Structure:
+HomeWork1
