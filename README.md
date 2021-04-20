@@ -41,3 +41,7 @@ Homework2
 4/7/2021
 Data Structure:
 Lab7 TreeMap
+
+4/20/2021
+Data Structure:
+HashMap
